@@ -12,25 +12,37 @@ import GitIcon from '../icons/GitIcon'
 import SpringBootIcon from '../icons/SpringBootIcon'
 import JavaIcon from '../icons/JavaIcon'
 
-
 type Props = {}
+
+const icons = [
+  ReactIcon,
+  NextjsIcon,
+  Html5Icon,
+  Css3Icon,
+  JavascriptIcon,
+  TailwindIcon,
+  TanStackIcon,
+  GsapIcon,
+  TypescriptIcon,
+  GitIcon,
+  SpringBootIcon,
+  JavaIcon
+]
+
+const doubledIcons = [...icons, ...icons]
 
 const IconCarousel = (props: Props) => {
   return (
-    <div id='icon-carousel'>
-      <div className="flex flex-row gap-5 overflow-hidden">
-         <ReactIcon size={48} />
-         <NextjsIcon size={48} />
-         <Html5Icon size={48} />
-         <Css3Icon size={48} />
-         <JavascriptIcon size={48} />
-         <TailwindIcon />
-         <TanStackIcon size={48} />
-         <GsapIcon size={48} />
-         <TypescriptIcon size={48} />
-         <GitIcon size={48} />
-         <SpringBootIcon size={48} />
-         <JavaIcon size={48} />
+    <div id='icon-carousel' className='w-full overflow-hidden mask-fade'>
+      <div className="flex flex-row flex-nowrap w-max py-2 animate-carousel-loop">
+        {doubledIcons.map((Icon, idx) => (
+          <div
+            key={idx}
+            className="bg-[var(--background-charcoal-100)] p-4 rounded-2xl flex items-center justify-center mr-5"
+          >
+            <Icon size={60} />
+          </div>
+        ))}
       </div>
     </div>
   )

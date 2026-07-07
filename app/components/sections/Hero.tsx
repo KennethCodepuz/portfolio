@@ -9,33 +9,35 @@ import Portrait from '@/public/my-picture.jpg'
 type Props = {}
 
 const Hero = (props: Props) => {
-  return (
-    <section id='hero'>
-      <div>
+   return (
+      <section id='hero' className='px-6 py-12 flex   '>
+         <div className='flex gap-5 flex-col w-full'>
             <StatusBadge />
-         <div>
-            Software Engineer
+            <h1 className='text-5xl'>
+               Software
+               <br />
+               Engineer.
+            </h1>
+            <p className='text-lg leading-normal text-[var(--text-white-40)]'>
+               Hi, I'm Kenneth Sean Corpuz, a Software Engineer and Computer Science student passionate about building scalable web and mobile applications. My goal is to build software that is reliable, maintainable, and designed to scale.
+            </p>
+            <div className='flex gap-4 items-center'>
+               <SeeMyWorks />
+               <ContactButton className="px-4 py-3 text-sm" />
+            </div>
+            <IconCarousel />
          </div>
-         <p>
-            Hi, I'm Kenneth Sean Corpuz, a Software Engineer and Computer Science student passionate about building scalable web and mobile applications. I enjoy creating clean, user-focused digital experiences while continuously improving my skills in software architecture, system design, cloud technologies, and performance optimization. My goal is to build software that is reliable, maintainable, and designed to scale.
-         </p>
-         <div>
-            <SeeMyWorks />
-            <ContactButton />
+         <div id='self-portrait-hero'>
+            <Image
+               src={Portrait}
+               alt="Self Portrait"
+               width={120}
+               height={400}
+               className="rounded-lg"
+            />
          </div>
-      </div>
-      <IconCarousel />
-      <div id='self-portrait-hero'>
-         <Image
-         src={Portrait}
-         alt="Self Portrait"
-         width={480}
-         height={480}
-         className="rounded-lg"
-         />
-      </div>
-    </section>
-  )
+      </section>
+   )
 }
 
 export default Hero
