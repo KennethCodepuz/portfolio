@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './about/Hero'
+import Hero from './components/sections/Hero'
 import './globals.css'
 import Header from './components/Header'
 
@@ -10,6 +10,7 @@ const layout = (props: Props) => {
     <html>
       <body>
         <Header />
+        <Hero />
       </body>
     </html>
   )
