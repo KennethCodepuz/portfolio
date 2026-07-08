@@ -17,13 +17,14 @@ type Props = {}
 
 const techStack = [
    { icon: ReactIcon, name: 'ReactJS' },
+
    { icon: NextjsIcon, name: 'NextJS' },
    { icon: Html5Icon, name: 'HTML5' },
    { icon: Css3Icon, name: 'CSS3' },
    { icon: JavascriptIcon, name: 'JavaScript' },
-   { icon: TailwindIcon, name: 'Tailwind' },
    { icon: TanStackIcon, name: 'TanStack' },
    { icon: GsapIcon, name: 'GSAP' },
+   { icon: TailwindIcon, name: 'TailwindCSS' },
    { icon: TypescriptIcon, name: 'TypeScript' },
    { icon: GitIcon, name: 'Git' },
    { icon: SpringBootIcon, name: 'SpringBoot' },
@@ -33,7 +34,7 @@ const techStack = [
 
 const Skills = (props: Props) => {
    return (
-      <section id='skills-section' className='px-6 py-14 bg-[var(--background-charcoal-100)] flex flex-col items-center'>
+      <section id='skills-section' className='px-6 py-14 bg-[var(--background-charcoal-100)] flex flex-col items-center gap-10'>
          <div className='flex flex-col items-center justify-center gap-2.5'>
             <TechStack />
             <h1 className='text-3xl leading-[1.4]'>Tools I Build With</h1>
@@ -41,9 +42,9 @@ const Skills = (props: Props) => {
                A curated set of technologies I rely on to build modern web and mobile applications
             </p>
          </div>
-         <div id='tech-stack' className='flex flew-wrap w-full'>
+         <div id='tech-stack' className='flex flex-wrap w-full justify-center items-center gap-2.5'>
             {techStack.map((tech, idx) => (
-               <div key={idx} className="gap-2 bg-[var(--background-dark-100)] rounded-full h-14 w-34 flex items-center justify-center border-[var(--border-white-5)] border-[0.5px]">
+               <div key={idx} className="gap-2 bg-[var(--background-dark-100)] rounded-full h-14 flex items-center justify-center border-[var(--border-white-5)] border-[0.5px] px-6 py-4">
                   <tech.icon size={26} />
                   <span className='text-lg'>{tech.name}</span>
                </div>
