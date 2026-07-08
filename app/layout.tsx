@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/sections/Hero'
+import Skills from './components/sections/Skills'
 import './globals.css'
 import Header from './components/Header'
 import { Inter } from 'next/font/google'
@@ -18,6 +19,7 @@ const layout = (props: Props) => {
       <body>
         <Header />
         <Hero />
+        <Skills />
       </body>
     </html>
   )

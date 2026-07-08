@@ -10,7 +10,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
    return (
-      <section id='hero' className='px-6 py-12 flex   '>
+      <section id='hero' className='px-6 py-14 flex flex-col  '>
          <div className='flex gap-5 flex-col w-full'>
             <StatusBadge />
             <h1 className='text-5xl'>
@@ -27,11 +27,11 @@ const Hero = (props: Props) => {
             </div>
             <IconCarousel />
          </div>
-         <div id='self-portrait-hero'>
+         <div id='self-portrait-hero' className='bg-[var(--background-charcoal-100)]'>
             <Image
                src={Portrait}
                alt="Self Portrait"
-               width={120}
+               width={400}
                height={400}
                className="rounded-lg"
             />
