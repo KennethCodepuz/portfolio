@@ -4,6 +4,7 @@ import Skills from './components/sections/Skills'
 import './globals.css'
 import Header from './components/Header'
 import { Inter } from 'next/font/google'
+import Projects from './components/sections/Projects'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,6 +21,7 @@ const layout = (props: Props) => {
         <Header />
         <Hero />
         <Skills />
+        <Projects />
       </body>
     </html>
   )
