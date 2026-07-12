@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import Portrait from '../../public/my-picture.jpg'
 import gsap from 'gsap'
-import ContactButton from './ui/ContactButton'
+import ButtonRightArrow from './ui/ButtonRightArrow'
 
 type Props = {}
 
@@ -98,7 +98,7 @@ const Header = (props: Props) => {
                      </a>
                   </li>
                ))}
-               <ContactButton />
+               <ButtonRightArrow className="px-4 py-3 text-sm">Contact Me</ButtonRightArrow>
             </ul>
 
             {/* Mobile Menu Toggle Button */}
@@ -141,7 +141,7 @@ const Header = (props: Props) => {
                      </a>
                   </li>
                ))}
-               <ContactButton className='w-38 h-10' />
+               <ButtonRightArrow className='w-38 h-10'>Contact Me</ButtonRightArrow>
             </ul>
          </div>
       </header>
