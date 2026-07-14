@@ -13,7 +13,7 @@ const Experience = (props: Props) => {
             <p className='text-center text-lg leading-normal text-[var(--text-white-40)]'>A summary of my professional journey and impact I've made</p>
          </div>
          <div id='job-experience-list' className='flex flex-col gap-2.5'>
-            <JobExperienceCard>
+            <JobExperienceCard defaultOpen={true}>
                <div className='flex flex-col gap-2'>
                   <h2 className='text-[1.375rem] leading-[1.4] font-light'>Frontend Developer - Freelance</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>January 2025 - February 2025</p>
