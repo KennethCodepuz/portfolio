@@ -1,9 +1,9 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import Portrait from '../../public/my-picture.jpg'
+import Portrait from '@/public/my-picture.jpg'
 import gsap from 'gsap'
-import ButtonRightArrow from './ui/ButtonRightArrow'
+import ButtonRightArrow from '../ui/ButtonRightArrow'
 
 type Props = {}
 

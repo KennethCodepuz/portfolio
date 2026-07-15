@@ -2,7 +2,8 @@ import React from 'react'
 import Hero from './components/sections/Hero'
 import Skills from './components/sections/Skills'
 import './globals.css'
-import Header from './components/Header'
+import Header from './components/sections/Header'
+import Footer from './components/sections/Footer'
 import { Inter } from 'next/font/google'
 import Projects from './components/sections/Projects'
 import Experience from './components/sections/Experience'
@@ -26,6 +27,7 @@ const layout = (props: Props) => {
         <Projects />
         <Experience />
         <CallToAction />
+        <Footer />
       </body>
     </html>
   )
