@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionTitle from '../ui/SectionTitle'
 import JobExperienceCard from '../ui/JobExperienceCard'
+import ButtonRightArrow from '../ui/ButtonRightArrow'
 
 type Props = {}
 
@@ -52,6 +53,7 @@ const Experience = (props: Props) => {
                </ul>
             </JobExperienceCard>
          </div>
+         <ButtonRightArrow className="px-4 py-3 text-sm" link="/Resume,Kenneth-Sean-Corpuz.pdf">Download My CV</ButtonRightArrow>
       </section>
    )
 }

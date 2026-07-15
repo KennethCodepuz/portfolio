@@ -9,7 +9,7 @@ type Props = {
 
 const ContactButton = ({ className = "", children, link = '#' }: Props) => {
   return (
-    <a href={link}>
+    <a href={link} download target='_blank'>
       <button className={`flex justify-center items-center gap-1 text-sm font-bold text-[var(--background-dark-100)] bg-[var(--background-white-100)] rounded-full cursor-pointer ${className}`}>
         {children}
         <RightArrow />
