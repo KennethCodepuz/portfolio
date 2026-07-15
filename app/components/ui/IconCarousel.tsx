@@ -33,7 +33,7 @@ const doubledIcons = [...icons, ...icons]
 
 const IconCarousel = (props: Props) => {
   return (
-    <div id='icon-carousel' className='w-full overflow-hidden mask-fade'>
+    <div id='icon-carousel' className='w-full overflow-hidden mask-fade lg:w-[90%]'>
       <div className="flex flex-row flex-nowrap w-max py-2 animate-carousel-loop">
         {doubledIcons.map((Icon, idx) => (
           <div

@@ -34,11 +34,11 @@ const techStack = [
 
 const Skills = (props: Props) => {
    return (
-      <section id='skills-section' className='px-6 py-14 bg-[var(--background-charcoal-100)] flex flex-col items-center gap-10'>
+      <section id='skills-section' className='px-6 lg:px-[200px] py-14 md:py-24 bg-[var(--background-charcoal-100)] flex flex-col items-center gap-10'>
          <div className='flex flex-col items-center justify-center gap-2.5'>
             <SectionTitle className='bg-[var(--background-dark-100)]'>Tech Stack</SectionTitle>
             <h1 className='text-3xl leading-[1.4]'>Tools I Build With</h1>
-            <p className='text-lg leading-normal text-[var(--text-white-40)] text-center'>
+            <p className='text-lg leading-normal text-[var(--text-white-40)] md:w-[70%] text-center'>
                A curated set of technologies I rely on to build modern web and mobile applications
             </p>
          </div>

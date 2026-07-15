@@ -7,15 +7,15 @@ type Props = {}
 
 const Experience = (props: Props) => {
    return (
-      <section id='experience' className='px-6 py-14 flex flex-col gap-10 bg-[var(--background-charcoal-100)] justify-center items-center'>
+      <section id='experience' className='px-6 lg:px-[200px] py-14 md:py-24 md:px-14.5 flex flex-col gap-10 bg-[var(--background-charcoal-100)] justify-center items-center w-full'>
          <div className='flex flex-col justify-center items-center gap-2.5'>
             <SectionTitle className='bg-[var(--background-dark-100)]'>Experience</SectionTitle>
             <h1 className='text-3xl leading-[1.4]'>Where I've Worked</h1>
             <p className='text-center text-lg leading-normal text-[var(--text-white-40)]'>A summary of my professional journey and impact I've made</p>
          </div>
-         <div id='job-experience-list' className='flex flex-col gap-2.5'>
+         <div id='job-experience-list' className='flex flex-col gap-2.5 w-full'>
             <JobExperienceCard defaultOpen={true}>
-               <div className='flex flex-col gap-2'>
+               <div className='flex flex-wrap justify-between items-center gap-2'>
                   <h2 className='text-[1.375rem] leading-[1.4] font-light'>Frontend Developer - Freelance</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>January 2025 - February 2025</p>
                </div>
@@ -28,7 +28,7 @@ const Experience = (props: Props) => {
                </ul>
             </JobExperienceCard>
             <JobExperienceCard>
-               <div className='flex flex-col gap-2'>
+               <div className='flex flex-wrap justify-between items-center gap-2'>
                   <h2 className='text-[1.375rem] leading-[1.4] font-light'>Software Developer Intern - HelportAI</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>July 2026 - July 2026</p>
                </div>
@@ -53,7 +53,7 @@ const Experience = (props: Props) => {
                </ul>
             </JobExperienceCard>
          </div>
-         <ButtonRightArrow className="px-4 py-3 text-sm" link="/Resume,Kenneth-Sean-Corpuz.pdf">Download My CV</ButtonRightArrow>
+         <ButtonRightArrow className="px-4 py-3 text-sm" link="/Resume,Kenneth-Sean-Corpuz.pdf" download={true}>Download My CV</ButtonRightArrow>
       </section>
    )
 }

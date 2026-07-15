@@ -8,16 +8,16 @@ import Portrait from '@/public/my-picture.jpg'
 type Props = {}
 
 const navItems = [
-   { id: 'skills', label: 'Skills', href: '' },
-   { id: 'projects', label: 'Projects', href: '' },
-   { id: 'experience', label: 'Experience', href: '' },
-   { id: 'testimonials', label: 'Testimonials', href: '' },
+   { id: 'home', label: 'Home', href: '#hero' },
+   { id: 'skills', label: 'Skills', href: '#skills-section' },
+   { id: 'projects', label: 'Projects', href: '#projects' },
+   { id: 'experience', label: 'Experience', href: '#experience' },
 ]
 
 const Footer = (props: Props) => {
    return (
-      <footer className='bg-[var(--background-dark-100)] py-14 px-6 border-t border-[var(--border-white-5)] '>
-         <div className='max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 pb-10'>
+      <footer className='bg-[var(--background-dark-100)] py-14 px-6 lg:px-[200px] border-t border-[var(--border-white-5)]'>
+         <div className='w-full flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20 pb-10'>
             {/* Information Section */}
             <div id='information' className='flex flex-col gap-5 max-w-md'>
                <div className='flex items-center gap-3.5'>
@@ -28,14 +28,36 @@ const Footer = (props: Props) => {
                </div>
                <p className='text-lg leading-normal text-[var(--text-white-40)]'>I build modern, user-focused web applications that combine clean design, performance, and real-world functionality.</p>
                <ul className='flex gap-4'>
-                  <li className='rounded-full bg-white text-black p-2.5 flex items-center justify-center cursor-pointer'>
-                     <a href="https://github.com/kennethcodepuz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FiGithub size={20} /></a>
+                  <li className='flex-shrink-0'>
+                     <a
+                        href="https://github.com/kennethcodepuz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        className='w-10 h-10 rounded-full bg-[var(--background-white-100)] text-[var(--text-dark-100)] flex items-center justify-center'
+                     >
+                        <FiGithub size={20} />
+                     </a>
                   </li>
-                  <li className='rounded-full bg-white text-black p-2.5 flex items-center justify-center cursor-pointer'>
-                     <a href="https://www.linkedin.com/in/kennethcorpuz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LuLinkedin size={20} /></a>
+                  <li className='flex-shrink-0'>
+                     <a
+                        href="https://www.linkedin.com/in/kennethcorpuz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        className='w-10 h-10 rounded-full bg-[var(--background-white-100)] text-[var(--text-dark-100)] flex items-center justify-center'
+                     >
+                        <LuLinkedin size={20} />
+                     </a>
                   </li>
-                  <li className='rounded-full bg-white text-black p-2.5 flex items-center justify-center cursor-pointer'>
-                     <a href="mailto:kennethseancorpuz14@gmail.com" aria-label="Email"><BiLogoGmail size={20} /></a>
+                  <li className='flex-shrink-0'>
+                     <a
+                        href="mailto:kennethseancorpuz14@gmail.com"
+                        aria-label="Email"
+                        className='w-10 h-10 rounded-full bg-[var(--background-white-100)] text-[var(--text-dark-100)] flex items-center justify-center'
+                     >
+                        <BiLogoGmail size={20} />
+                     </a>
                   </li>
                </ul>
             </div>

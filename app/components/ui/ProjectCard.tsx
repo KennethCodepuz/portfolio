@@ -8,7 +8,7 @@ type Props = {
 
 const ProjectCard = ({ content, children }: Props) => {
    return (
-      <div className='bg-[var(--background-charcoal-100)] px-2 py-2 rounded-xl'>
+      <div className='bg-[var(--background-charcoal-100)] px-2 py-2 rounded-xl max-w-[500px] w-full'>
          <video className='w-full rounded-2xl mb-3' controls autoPlay loop muted playsInline>
             <source src={content} type='video/mp4' />
          </video>
