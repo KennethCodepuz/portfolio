@@ -1,8 +1,8 @@
 export default function ArrowIcon() {
   return (
     <svg
-      width="22"
-      height="22"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
     >

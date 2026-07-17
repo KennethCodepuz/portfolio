@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import { FiGithub } from "react-icons/fi";
 import { LuLinkedin } from "react-icons/lu";
 import { BiLogoGmail } from "react-icons/bi";
 import Image from 'next/image';
 import Portrait from '@/public/my-picture.jpg'
+import HoverText from '../ui/HoverText';
 
 type Props = {}
 
@@ -71,7 +73,7 @@ const Footer = (props: Props) => {
                            href={item.href || `#${item.id}`}
                            className='text-[var(--text-white-100)] text-base leading-normal'
                         >
-                           {item.label}
+                           <HoverText>{item.label}</HoverText>
                         </a>
                      </li>
                   ))}

@@ -1,17 +1,28 @@
+"use client"
 import React from 'react'
 import SectionTitle from '../ui/SectionTitle'
 import JobExperienceCard from '../ui/JobExperienceCard'
 import ButtonRightArrow from '../ui/ButtonRightArrow'
+import AnimatedTitle from '../ui/AnimatedTitle'
+import AnimatedParagraph from '../ui/AnimatedParagraph'
+import FadeUp from '../ui/FadeUp'
+import SlideUp from '../ui/SlideUp'
 
 type Props = {}
 
 const Experience = (props: Props) => {
    return (
-      <section id='experience' className='px-6 lg:px-[200px] py-14 md:py-24 md:px-14.5 flex flex-col gap-10 bg-[var(--background-charcoal-100)] justify-center items-center w-full'>
+      <section id='experience' className='px-6 lg:px-[200px] py-14 md:py-24 md:px-14.5 lg:py-31 flex flex-col gap-10 bg-[var(--background-charcoal-100)] justify-center items-center w-full'>
          <div className='flex flex-col justify-center items-center gap-2.5'>
-            <SectionTitle className='bg-[var(--background-dark-100)]'>Experience</SectionTitle>
-            <h1 className='text-3xl leading-[1.4]'>Where I've Worked</h1>
-            <p className='text-center text-lg leading-normal text-[var(--text-white-40)]'>A summary of my professional journey and impact I've made</p>
+            <FadeUp>
+               <SectionTitle className='bg-[var(--background-dark-100)]'>Experience</SectionTitle>
+            </FadeUp>
+            <AnimatedTitle className='text-3xl leading-[1.4]' delay={0.1}>
+               {"Where I've Worked"}
+            </AnimatedTitle>
+            <AnimatedParagraph className='text-center text-lg leading-normal text-[var(--text-white-40)]'>
+               {"A summary of my professional journey and impact I've made"}
+            </AnimatedParagraph>
          </div>
          <div id='job-experience-list' className='flex flex-col gap-2.5 w-full'>
             <JobExperienceCard defaultOpen={true}>
@@ -53,7 +64,9 @@ const Experience = (props: Props) => {
                </ul>
             </JobExperienceCard>
          </div>
-         <ButtonRightArrow className="px-4 py-3 text-sm" link="/Resume,Kenneth-Sean-Corpuz.pdf" download={true}>Download My CV</ButtonRightArrow>
+         <SlideUp>
+            <ButtonRightArrow className="px-4 py-3 text-sm" link="/Resume,Kenneth-Sean-Corpuz.pdf" download={true}>Download My CV</ButtonRightArrow>
+         </SlideUp>
       </section>
    )
 }

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Portrait from '@/public/my-picture.jpg'
 import gsap from 'gsap'
 import ButtonRightArrow from '../ui/ButtonRightArrow'
+import HoverText from '../ui/HoverText'
 
 type Props = {}
 
@@ -94,7 +95,7 @@ const Header = (props: Props) => {
                {navItems.map((item) => (
                   <li key={item.id}>
                      <a href={item.href} id={`desktop-${item.id}`} className='text-[var(--text-white-100)] transition-colors duration-200'>
-                        {item.label}
+                        <HoverText>{item.label}</HoverText>
                      </a>
                   </li>
                ))}
@@ -137,7 +138,7 @@ const Header = (props: Props) => {
                         onClick={() => setIsOpen(false)}
                         className='block py-2 text-[var(--text-white-100)] text-base hover:text-white transition-colors duration-200'
                      >
-                        {item.label}
+                        <HoverText>{item.label}</HoverText>
                      </a>
                   </li>
                ))}
