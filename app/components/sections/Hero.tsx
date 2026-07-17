@@ -10,7 +10,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
    return (
-      <section id='hero' className='px-6 lg:px-[200px] py-14 lg:py-30 flex flex-col lg:flex-row lg:gap-1 justify-center items-center gap-12 w-full min-h-[calc(100vh-5rem)]'>
+      <section id='hero' className='px-6 lg:px-[200px] py-14 lg:py-30 flex flex-col lg:flex-row lg:gap-1 justify-center items-center gap-12 w-full'>
          <div className='flex gap-5 flex-col w-full lg:w-[60%]'>
             <StatusBadge />
             <h1 className='text-5xl lg:text-6xl font-semibold leading-[1.1]'>

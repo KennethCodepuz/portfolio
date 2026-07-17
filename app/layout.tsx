@@ -1,13 +1,7 @@
 import React from 'react'
-import Hero from './components/sections/Hero'
-import Skills from './components/sections/Skills'
 import './globals.css'
-import Header from './components/sections/Header'
-import Footer from './components/sections/Footer'
 import { Inter } from 'next/font/google'
-import Projects from './components/sections/Projects'
-import Experience from './components/sections/Experience'
-import CallToAction from './components/sections/CallToAction'
+import type { Metadata } from 'next'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,19 +9,20 @@ const inter = Inter({
   display: 'swap',
 })
 
-type Props = {}
+export const metadata: Metadata = {
+  title: 'Kenneth Sean Corpuz — AI/Software Engineer',
+  description: 'Portfolio of Kenneth Sean Corpuz, a Software Engineer and Computer Science student passionate about building scalable web and mobile applications.',
+}
 
-const layout = (props: Props) => {
+type Props = {
+  children: React.ReactNode
+}
+
+const layout = ({ children }: Props) => {
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <Header />
-        <Hero />
-        <Skills />
-        <Projects />
-        <Experience />
-        <CallToAction />
-        <Footer />
+        {children}
       </body>
     </html>
   )
