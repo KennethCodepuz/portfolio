@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
             <SectionTitle className='bg-[var(--background-charcoal-100)]'>Projects</SectionTitle>
          </FadeUp>
          <AnimatedTitle className='text-3xl leading-[1.4]' delay={0.1}>
-            {"Projects I've Shipped"}
+            {"Projects I've Built"}
          </AnimatedTitle>
          <AnimatedParagraph className='text-lg leading-normal text-[var(--text-white-40)] text-center lg:w-[50%]'>
             {"A collection of my notable projects, ranging from web and mobile applications to backend systems"}
