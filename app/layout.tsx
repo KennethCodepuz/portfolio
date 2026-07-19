@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Kenneth Sean Corpuz — AI/Software Engineer',
-  description: 'Portfolio of Kenneth Sean Corpuz, a Software Engineer and Computer Science student passionate about building scalable web and mobile applications.',
+  description: 'Portfolio of Kenneth Sean Corpuz, a Software Engineer specializing in building scalable web and mobile applications.',
 }
 
 type Props = {

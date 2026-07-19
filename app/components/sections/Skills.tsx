@@ -16,6 +16,7 @@ import TypescriptIcon from '../icons/TypeScriptIcon'
 import GitIcon from '../icons/GitIcon'
 import SpringBootIcon from '../icons/SpringBootIcon'
 import JavaIcon from '../icons/JavaIcon'
+import ClaudeIcon from '../icons/ClaudeIcon'
 import AnimatedTitle from '../ui/AnimatedTitle'
 import AnimatedParagraph from '../ui/AnimatedParagraph'
 import FadeUp from '../ui/FadeUp'
@@ -37,6 +38,7 @@ const techStack = [
    { icon: GitIcon, name: 'Git' },
    { icon: SpringBootIcon, name: 'SpringBoot' },
    { icon: JavaIcon, name: 'Java' },
+   { icon: ClaudeIcon, name: 'Claude AI' },
 ]
 
 const Skills = (props: Props) => {

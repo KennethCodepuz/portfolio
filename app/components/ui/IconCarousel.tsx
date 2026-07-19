@@ -11,6 +11,7 @@ import TypescriptIcon from '../icons/TypeScriptIcon'
 import GitIcon from '../icons/GitIcon'
 import SpringBootIcon from '../icons/SpringBootIcon'
 import JavaIcon from '../icons/JavaIcon'
+import ClaudeIcon from '../icons/ClaudeIcon'
 
 type Props = {}
 
@@ -26,7 +27,8 @@ const icons = [
   TypescriptIcon,
   GitIcon,
   SpringBootIcon,
-  JavaIcon
+  JavaIcon,
+  ClaudeIcon
 ]
 
 const doubledIcons = [...icons, ...icons]

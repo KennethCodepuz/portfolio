@@ -36,9 +36,9 @@ const AnimatedTitle = ({
       const toVars = {
          opacity: 1,
          filter: 'blur(0px)',
-         duration: 1.1,
+         duration: 0.55,
          ease: 'power3.out',
-         stagger: 0.07,
+         stagger: 0.035,
          delay: triggerOnMount ? 0.2 + delay : delay,
       }
 

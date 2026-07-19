@@ -16,7 +16,7 @@ const CallToAction = (props: Props) => {
                {"Let's Connect And Build Something Great"}
             </AnimatedTitle>
             <AnimatedParagraph className='text-lg text-center leading-normal text-[var(--text-white-40)] md:w-[70%]'>
-               {"I'm currently open to new opportunities, whether they're full-time roles, freelance projects, or Internships."}
+               {"I'm currently open to new opportunities, whether they're full-time roles or freelance projects."}
             </AnimatedParagraph>
             <SlideUp>
                <ButtonRightArrow className='px-4 py-3 text-sm' link="https://www.linkedin.com/in/kennethcorpuz/">Contact Me</ButtonRightArrow>

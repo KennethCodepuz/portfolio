@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
 
             {/* Paragraph — lines fade up starting at 0.55s */}
             <AnimatedParagraph className='text-lg leading-normal text-[var(--text-white-40)] lg:w-[70%]' triggerOnMount>
-               {"Hi, I'm Kenneth Sean Corpuz, a Software Engineer and Computer Science student passionate about building scalable web and mobile applications. My goal is to build software that is reliable, maintainable, and designed to scale."}
+               {"Hi, I'm Kenneth Sean Corpuz, a Software Engineer passionate about building scalable web and mobile applications. My goal is to build software that is reliable, maintainable, and designed to scale."}
             </AnimatedParagraph>
 
             {/* Buttons */}

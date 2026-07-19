@@ -40,7 +40,7 @@ const Experience = (props: Props) => {
             </JobExperienceCard>
             <JobExperienceCard>
                <div className='flex flex-wrap justify-between items-center gap-2'>
-                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Software Developer Intern - HelportAI</h2>
+                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Software Developer - HelportAI</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>July 2026 - July 2026</p>
                </div>
                <ul className='list-disc px-6'>
