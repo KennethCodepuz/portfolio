@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
                className='text-5xl lg:text-6xl font-semibold leading-[1.1]'
                triggerOnMount
             >
-               {'AI/Software\nEngineer.'}
+               {'AI/Backend\nEngineer.'}
             </AnimatedTitle>
 
             {/* Paragraph — lines fade up starting at 0.55s */}
