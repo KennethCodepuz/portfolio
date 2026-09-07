@@ -8,9 +8,7 @@ import AnimatedParagraph from '../ui/AnimatedParagraph'
 import FadeUp from '../ui/FadeUp'
 import SlideUp from '../ui/SlideUp'
 
-type Props = {}
-
-const Experience = (props: Props) => {
+const Experience = () => {
    return (
       <section id='experience' className='px-6 lg:px-[200px] py-14 md:py-24 md:px-14.5 lg:py-31 flex flex-col gap-10 bg-[var(--background-charcoal-100)] justify-center items-center w-full'>
          <div className='flex flex-col justify-center items-center gap-2.5'>
@@ -21,46 +19,32 @@ const Experience = (props: Props) => {
                {"Where I've Worked"}
             </AnimatedTitle>
             <AnimatedParagraph className='text-center text-lg leading-normal text-[var(--text-white-40)]'>
-               {"A summary of my professional journey and impact I've made"}
+               {'Hands-on product engineering experience across frontend, backend, data, and delivery.'}
             </AnimatedParagraph>
          </div>
          <div id='job-experience-list' className='flex flex-col gap-2.5 w-full'>
             <JobExperienceCard defaultOpen={true}>
                <div className='flex flex-wrap justify-between items-center gap-2'>
-                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Frontend Developer - Freelance</h2>
+                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Frontend Developer · Freelance</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>January 2025 - February 2025</p>
                </div>
                <ul className='list-disc px-6'>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Developed a responsive frontend website using Reac.</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Integrated Sanity as a headless CMS for dynamic content managemen.</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Implemented reusable components and modern UI patterns.</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Deployed and maintained the application on Vercel</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Collaborated with the client to refine UI/UX and content structure</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Built a responsive client website with React and reusable UI components.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Integrated Sanity as a headless CMS so content could be updated without code changes.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Deployed and maintained the application on Vercel while iterating with the client on UI/UX and content structure.</li>
                </ul>
             </JobExperienceCard>
             <JobExperienceCard>
                <div className='flex flex-wrap justify-between items-center gap-2'>
-                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Software Developer - HelportAI</h2>
+                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Software Developer · HelportAI</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>July 2026 - July 2026</p>
                </div>
                <ul className='list-disc px-6'>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Developed and maintained an internal Asset Management System using Next.js, React, TypeScript,
-                     Prisma ORM, and PostgreSQL.
-                  </li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Engineered responsive and reusable frontend components using React, Next.js, and Tailwind CSS.</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Developed full-stack functionality by integrating frontend interfaces with backend APIs and business
-                     logic.
-                  </li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Designed, updated, and migrated PostgreSQL database schemas using Prisma ORM while maintaining
-                     data integrity.
-                  </li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Debugged and optimized application features through testing and issue resolution, improving overall
-                     system reliability.
-                  </li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Collaborated with developers using Git to manage feature development and code integration.</li>
-                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Assisted in production deployment, database migration, and post-deployment verification to ensure
-                     successful software releases.
-                  </li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Built and maintained Asset Management System modules with Next.js, React, TypeScript, Prisma, and PostgreSQL.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Delivered reusable Tailwind CSS interfaces connected to backend APIs and business logic for full-stack workflows.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Designed and migrated PostgreSQL schemas through Prisma while protecting data integrity.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Tested, debugged, and resolved issues across features to improve application reliability.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Collaborated through Git-based feature development and code integration; supported production deployments, migrations, and post-release verification.</li>
                </ul>
             </JobExperienceCard>
          </div>

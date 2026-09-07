@@ -7,16 +7,15 @@ import Image from 'next/image';
 import Portrait from '@/public/my-picture.jpg'
 import HoverText from '../ui/HoverText';
 
-type Props = {}
-
 const navItems = [
    { id: 'home', label: 'Home', href: '#hero' },
    { id: 'skills', label: 'Skills', href: '#skills-section' },
    { id: 'projects', label: 'Projects', href: '#projects' },
    { id: 'experience', label: 'Experience', href: '#experience' },
+   { id: 'education', label: 'Education', href: '#education' },
 ]
 
-const Footer = (props: Props) => {
+const Footer = () => {
    return (
       <footer className='bg-[var(--background-dark-100)] py-14 px-6 lg:px-[200px] border-t border-[var(--border-white-5)]'>
          <div className='w-full flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20 pb-10'>

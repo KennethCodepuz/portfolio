@@ -13,8 +13,6 @@ import SpringBootIcon from '../icons/SpringBootIcon'
 import JavaIcon from '../icons/JavaIcon'
 import ClaudeIcon from '../icons/ClaudeIcon'
 
-type Props = {}
-
 const icons = [
   ReactIcon,
   NextjsIcon,
@@ -33,7 +31,7 @@ const icons = [
 
 const doubledIcons = [...icons, ...icons]
 
-const IconCarousel = (props: Props) => {
+const IconCarousel = () => {
   return (
     <div id='icon-carousel' className='w-full overflow-hidden mask-fade lg:w-[90%]'>
       <div className="flex flex-row flex-nowrap w-max py-2 animate-carousel-loop">

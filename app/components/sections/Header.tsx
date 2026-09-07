@@ -6,16 +6,15 @@ import gsap from 'gsap'
 import ButtonRightArrow from '../ui/ButtonRightArrow'
 import HoverText from '../ui/HoverText'
 
-type Props = {}
-
 const navItems = [
    { id: 'home', label: 'Home', href: '#hero' },
    { id: 'skills', label: 'Skills', href: '#skills-section' },
    { id: 'projects', label: 'Projects', href: '#projects' },
    { id: 'experience', label: 'Experience', href: '#experience' },
+   { id: 'education', label: 'Education', href: '#education' },
 ]
 
-const Header = (props: Props) => {
+const Header = () => {
 
    const [isOpen, setIsOpen] = useState(false)
    const menuRef = useRef<HTMLDivElement>(null)
