@@ -25,6 +25,17 @@ const Experience = () => {
          <div id='job-experience-list' className='flex flex-col gap-2.5 w-full'>
             <JobExperienceCard defaultOpen={true}>
                <div className='flex flex-wrap justify-between items-center gap-2'>
+                  <h2 className='text-[1.375rem] leading-[1.4] font-light'>Full-Stack Product & Automation Contributor · TimeRich</h2>
+                  <p className='text-lg leading-normal text-[var(--text-white-40)]'>September 2026 - Present</p>
+               </div>
+               <ul className='list-disc px-6'>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Built checkout and onboarding workflows for a membership platform using Cloudflare Workers and backend integrations.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Fixed cross-device curriculum progress by replacing browser-local state with authenticated Supabase persistence and Worker APIs.</li>
+                  <li className='text-lg leading-normal text-[var(--text-white-40)]'>Supported content operations, portal QA, and member-facing updates across desktop and Android.</li>
+               </ul>
+            </JobExperienceCard>
+            <JobExperienceCard>
+               <div className='flex flex-wrap justify-between items-center gap-2'>
                   <h2 className='text-[1.375rem] leading-[1.4] font-light'>Frontend Developer · Freelance</h2>
                   <p className='text-lg leading-normal text-[var(--text-white-40)]'>January 2025 - February 2025</p>
                </div>
